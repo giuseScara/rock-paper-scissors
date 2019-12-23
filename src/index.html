@@ -19,8 +19,7 @@
         <div class="inner">
           <h3 class="masthead-brand">Rock-Paper-Scissors Game</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Description</a>
+            <a class="nav-link active" href="https://github.com/giuseScara/rock-paper-scissors" target="_blank">Description</a>
           </nav>
         </div>
       </header>
@@ -29,38 +28,71 @@
           <div class="menu">
               <h1 class="cover-heading">Start the game</h1>
               <p class="lead">
-                <div id="playerMode" class="btn btn-lg btn-secondary">
+                <div id="playerMode" class="btn btn-start btn-secondary">
                   <i class="fa fa-user"></i> vs <i class="fa fa-desktop"></i>
                 </div>
-                or
-                <div id="computerMode" class="btn btn-lg btn-secondary">
+                <div class="or">or</div>
+                <div id="computerMode" class="btn btn-start  btn-secondary">
                   <i class="fa fa-desktop"></i> vs <i class="fa fa-desktop"></i>
                 </div>
               </p>
+            </div> <!--menu -->
+
+             <div class="score hide-element">
+              <div id="player1">
+                <span id="label-score1">Player A</span>
+                <span id="score1" data-score="0">0</span> 
+                <span>-</span>
+              </div>
+              <div id="player1">
+                <span id="score2" data-score="0">0</span>
+                <span class="label-score2">Computer B</span>
+              </div>
             </div>
-            <div class="game">
+
+            <div class="game hide-element">
               <h1 class="cover-heading">Play</h1>
               <div class="row">
-                <div class="col-lg-4 col-choise" id="rock">
+                <div class="col-sm-4 col-choise" id="3">
                   <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
                   <h3>Rock</h3>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4 col-choise" id="paper">
+                <div class="col-sm-4 col-choise" id="2">
                   <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
                   <h3>Paper</h3>
                 </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4 col-choise" id="scissors">
+                <div class="col-sm-4 col-choise" id="1">
                   <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
                   <h3>Scissors</h3>
                 </div><!-- /.col-lg-4 -->    
-              </div><!-- /.row -->
+              </div>
+              <div id="restartGame" class="btn btn-xs btn-secondary">
+                <i class="fa fa-refresh" aria-hidden="true"></i> Restart
+              </div>
+            </div> <!-- game -->
+
+            <div class="result" id="result-win">
+              <h2>Yuo win</h2>
+              <i class="fa fa-smile-o" aria-hidden="true"></i>
             </div>
+
+            <div class="result" id="result-loose">
+              <h2>You loose</h2>
+              <i class="fa fa-frown-o" aria-hidden="true"></i>
+            </div>
+
         </main>
       </div>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p>Created by 
+            <a href="https://www.linkedin.com/in/giuseppe-scaramuzzino/" target="_blank">Giuseppe Scaramuzzino</a> 
+            <a href="https://twitter.com/giuseScara" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/giuseScara" target="_blank"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
+            <a href="https://gitlab.com/giuseppescaramuzzino" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/giuseppe-scaramuzzino/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </p>
         </div>
       </footer>
     </div>

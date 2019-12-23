@@ -19,7 +19,7 @@ describe("generateComputerChoise(): Testing Generate Random Number between 0 and
 });
 
 describe("checkGameWinner: Testing Game Winner...", function() {
-    const scissors = model[0].id,
+  const scissors = model[0].id,
     paper = model[1].id,
     rock = model[2].id;
 
@@ -27,37 +27,37 @@ describe("checkGameWinner: Testing Game Winner...", function() {
     it("Scissors should beats Paper", function() {
       expect(
         service.checkGameWinner(service.beatsStrategy, scissors, paper)
-      ).to.be.equals(scissors);
+      ).to.be.true;
     });
 
     it("Paper should beats Rock", function() {
-      expect(service.checkGameWinner(service.beatsStrategy, paper, rock)).to.equals(
-        paper
-      );
+      expect(
+        service.checkGameWinner(service.beatsStrategy, paper, rock)
+      ).to.be.true;
     });
 
     it("Rock should beats Scissors", function() {
       expect(
         service.checkGameWinner(service.beatsStrategy, rock, scissors)
-      ).to.be.equals(rock);
+      ).to.be.true;
     });
 
     it("Paper should not beats Scissors", function() {
       expect(
         service.checkGameWinner(service.beatsStrategy, paper, scissors)
-      ).to.not.equals(paper);
+      ).to.be.false;
     });
 
     it("Rock should beats Paper", function() {
-      expect(service.checkGameWinner(service.beatsStrategy, rock, paper)).to.not.equals(
-        rock
-      );
+      expect(
+        service.checkGameWinner(service.beatsStrategy, rock, paper)
+      ).to.be.false;
     });
 
     it("Scissors should beats Rock", function() {
       expect(
         service.checkGameWinner(service.beatsStrategy, scissors, rock)
-      ).to.not.equals(scissors);
+      ).to.be.false;
     });
   });
 });
