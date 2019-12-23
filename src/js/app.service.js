@@ -27,4 +27,6 @@ function RockPaperScissorsService() {
   };
 };
 
-module.exports = RockPaperScissorsService;
+if (typeof module !== 'undefined') {
+  module.exports = RockPaperScissorsService;
+}

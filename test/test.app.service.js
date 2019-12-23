@@ -1,5 +1,5 @@
-const model = require("../src/app.model")();
-const service = require("../src/app.service")();
+const model = require("../src/js/app.model")();
+const service = require("../src/js/app.service")();
 const expect = require("chai").expect;
 
 describe("generateComputerChoise(): Testing Generate Random Number between 0 and 1...", function() {

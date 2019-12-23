@@ -1,4 +1,4 @@
-const model = require("../src/app.model")();
+const model = require("../src/js/app.model")();
 const expect = require("chai").expect;
 
 describe("model: Testing Game model...", function() {

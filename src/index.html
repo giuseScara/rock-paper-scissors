@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Giuseppe Scaramuzzino">
+    <meta name="description" content="Rock, Paper and Scissor Game">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rock, Paper and Scissors Game</title>
+  </head>
+  <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Rock-Paper-Scissors Game</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Description</a>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <main role="main" class="inner cover">
+          <div class="menu">
+              <h1 class="cover-heading">Start the game</h1>
+              <p class="lead">
+                <div id="playerMode" class="btn btn-lg btn-secondary">
+                  <i class="fa fa-user"></i> vs <i class="fa fa-desktop"></i>
+                </div>
+                or
+                <div id="computerMode" class="btn btn-lg btn-secondary">
+                  <i class="fa fa-desktop"></i> vs <i class="fa fa-desktop"></i>
+                </div>
+              </p>
+            </div>
+            <div class="game">
+              <h1 class="cover-heading">Play</h1>
+              <div class="row">
+                <div class="col-lg-4 col-choise" id="rock">
+                  <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+                  <h3>Rock</h3>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 col-choise" id="paper">
+                  <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                  <h3>Paper</h3>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 col-choise" id="scissors">
+                  <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+                  <h3>Scissors</h3>
+                </div><!-- /.col-lg-4 -->    
+              </div><!-- /.row -->
+            </div>
+        </main>
+      </div>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="./js/app.model.js"></script>
+    <script src="./js/app.service.js"></script>
+    <script src="./js/app.controller.js"></script>
+  </body>
+</html>
