@@ -5,6 +5,7 @@ Rock paper scissors (also known as scissors rock paper and scissors paper stone)
 ## Frameworks and Tools:
 * Javascript
 * [Bootstrap](https://getbootstrap.com/)
+* [Fontawesome](https://fontawesome.com/)
 * CSS
 * [MochaJs](https://mochajs.org/) 
 * [ChaiJs](https://www.chaijs.com/)
