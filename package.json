@@ -2,8 +2,10 @@
   "name": "rock-paper-scissors",
   "version": "1.0.0",
   "description": "Rock Paper Scissor game",
-  "main": "index.html",
+  "main": "src/index.html",
   "scripts": {
+    "build": "npm install && cp node_modules/bootstrap/dist/css/bootstrap.min.css src/css/ && cp node_modules/font-awesome/css/font-awesome.min.css src/css/ && cp -r node_modules/font-awesome/fonts src/.",
+    "prod": "npm run build && mkdir dir && cp -r src dist",
     "test": "mocha"
   },
   "repository": {
@@ -18,7 +20,8 @@
   "homepage": "https://github.com/giuseScara/rock-paper-scissors#readme",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "http-server": "^0.12.0"
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^5.6.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
