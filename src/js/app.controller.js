@@ -68,14 +68,20 @@ function RockPaperScissorsController() {
         document.getElementById("label-score1").innerHTML = label;
     };
 
+    const highlightsComputerChoise = function(choise) {
+        document.getElementById(choise).classList.add("col-choise-highlights");
+        setTimeout(function() {
+            document.getElementById(choise).classList.remove("col-choise-highlights");
+        },1000);
+    };
+
     const startAsComputer = function() {
-        if (intervalComputer) {
-            clearInterval(intervalComputer);
-        }
+        if (intervalComputer) clearInterval(intervalComputer);
         //create automatic computer behaviour
         intervalComputer = setInterval(function(){
             const choise1 = service.generateComputerChoise(model);
             const choise2 = service.generateComputerChoise(model);
+            highlightsComputerChoise(choise1);
             const isPlayWinner = service.checkGameWinner(service.beatsStrategy,choise1, choise2);
             if(isPlayWinner) incrementScore("score1");
             else  incrementScore("score2");

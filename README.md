@@ -11,7 +11,7 @@ Rock paper scissors (also known as scissors rock paper and scissors paper stone)
 * [ChaiJs](https://www.chaijs.com/)
 
 ## Command
-* Build project:
+* Before start the game you have to build the project:
     ```javascript
     npm run build
     ```
