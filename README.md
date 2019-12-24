@@ -19,3 +19,5 @@ Rock paper scissors (also known as scissors rock paper and scissors paper stone)
   ```javascript
   npm test
   ```
+## Demo
+[Click here](https://rock-paper-scissors-game-4c6a9.firebaseapp.com/)
