@@ -5,7 +5,7 @@
   "main": "src/index.html",
   "scripts": {
     "build": "npm install && cp node_modules/bootstrap/dist/css/bootstrap.min.css src/css/ && cp node_modules/font-awesome/css/font-awesome.min.css src/css/ && cp -r node_modules/font-awesome/fonts src/.",
-    "prod": "npm run build && mkdir dir && cp -r src dist",
+    "prod": "npm run build && mkdir dist && cp src/* dist/* && firebase deploy && rm -r dist",
     "test": "mocha"
   },
   "repository": {
